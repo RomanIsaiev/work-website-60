@@ -12,6 +12,18 @@
 @import url(../css/utils/variables.css);
 @import url(../css/utils/common.css);
 
+@keyframes pulseScale {
+  0% {
+    scale: 1;
+  }
+  50% {
+    scale: 1.07;
+  }
+  100% {
+    scale: 1;
+  }
+}
+
 /* hero */
 
 .hero {
@@ -101,7 +113,9 @@
   line-height: 89%; /* 13.35px */
   letter-spacing: -0.3px;
 
-  max-width: 137px;
+  max-width: 142px;
+
+  padding-bottom: 5px;
 }
 
 .hero-list {
@@ -140,7 +154,7 @@
 .hero-list .item-image {
   position: absolute;
   left: 50%;
-  top: -7px;
+  top: -14px;
   transform: translate(-50%);
 }
 
@@ -150,18 +164,21 @@
   max-width: 320px;
   width: 100%;
   margin: 0 auto;
+
+  animation: pulseScale 2000ms infinite;
 }
 
 .header-button-container.scroll-container {
   display: none;
 }
 
-/* ! */
+/* */
 .header-button-container.scroll-container.js-show {
-  display: none;
+  display: block;
 
   position: fixed;
-  bottom: 20px;
+  bottom: 30px;
+  z-index: 999;
 }
 
 .header-button {
@@ -188,8 +205,6 @@
   position: absolute;
   top: -25px;
   right: -10px;
-
-  animation: pulseScale 1000ms infinite;
 }
 
 .sale-mark {
@@ -234,6 +249,10 @@
 .bonus {
   padding-top: 40px;
   background: #e0757b;
+}
+
+.bonus.section {
+  padding-top: 20px;
 }
 
 .bonus-title {
@@ -439,7 +458,7 @@
 .first-lesson-list .list-item {
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 8px;
 
   padding: 20px 16px;
   border-radius: 9.262px;
@@ -629,7 +648,7 @@
   font-family: 'Futura PT';
   font-size: 16px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 100%; /* 16px */
   letter-spacing: -0.32px;
 
@@ -655,7 +674,7 @@
 .modules-list .list-item {
   color: #000;
   font-family: 'Futura PT';
-  font-size: 14px;
+  font-size: 15px;
   font-style: normal;
   font-weight: 400;
   line-height: 100%; /* 16px */
@@ -707,7 +726,7 @@
   letter-spacing: -1.92px;
   text-transform: uppercase;
 
-  margin-bottom: 320px;
+  margin-bottom: 340px;
 }
 
 .about-author-name {
@@ -733,7 +752,15 @@
 
 .about-author-list .list-item {
   position: relative;
-  padding-left: 20px;
+
+  color: #090909;
+  font-family: 'Futura PT';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%; /* 17.6px */
+
+  padding-left: 10px;
 }
 
 .about-author-list .list-item::before {
@@ -1315,6 +1342,8 @@
 
 .footer {
   background: #101010;
+
+  padding-bottom: 80px;
 }
 
 .footer-deals::after {

@@ -14,7 +14,10 @@
     <main>
       <section class="hero">
         <div class="container">
-          <span class="course-category">Beauty-інтенсив</span>
+          <div class="course-info">
+            <span class="course-category">Beauty-інтенсив</span>
+            <span class="course-category">старт 25 серпня</span>
+          </div>
           <div class="hero-title-container">
             <h1 class="hero-title">Стильні укладки</h1>
             <span class="hero-subtitle">на мільйон</span>
@@ -220,7 +223,13 @@
               </div>
             </li>
           </ul>
+          <p class="text-sale">Знижка -75% діє ще:</p>
           <div id="countdown-one" class="countdown">
+            <div class="countdown-number">
+              <span class="days countdown-time"></span>
+              <div class="countdown-label days-label"></div>
+            </div>
+            <div><span class="countdown-doubledot"></span></div>
             <div class="countdown-number">
               <span class="hours countdown-time"></span>
               <div class="countdown-label hours-label"></div>
@@ -634,7 +643,7 @@
                   <div class="program-list-item-container">
                     <span class="item-lesson">МОДУЛЬ 4</span>
                     <h3 class="program-list-item-title">
-                      Демонстрація трьох найактуальніших зачісок
+                      Демонстрація зачісок
                     </h3>
                   </div>
                 </div>
@@ -725,7 +734,7 @@
               <p class="item-text">
                 <span>Також, ти матимеш</span> доступ до спільного чату з
                 авторкою курсу та іншими учасниками для обговорення питань та
-                обміну досвідом
+                обміну досвідом (залежно від обраного тарифу)
               </p>
             </li>
           </ul>
@@ -750,7 +759,7 @@
                     alt="checkmark"
                   />
                   <p class="included-text">
-                    Доступ до усіх базових матеріалів курсу
+                    Доступ до базових матеріалів курсу
                   </p>
                 </li>
                 <li class="included-item">
@@ -773,6 +782,19 @@
                   />
                   <p class="included-text">Без бонусних уроків</p>
                 </li>
+                <li class="included-item">
+                  <img
+                    width="20"
+                    height="20"
+                    class="included-checkmark"
+                    src="./src/img/tariffs/included-checkmark.svg"
+                    alt="checkmark"
+                  />
+                  <p class="included-text">
+                    Без уроку створення найактуальнішої <br />
+                    Голівудської хвилі❗️
+                  </p>
+                </li>
               </ul>
               <span class="entries-time">Доступ - 2 місяці</span>
               <div class="price-container">
@@ -785,7 +807,7 @@
             </li>
             <li class="list-item">
               <div class="item-title-container">
-                <h3 class="item-title">Бізнес клас</h3>
+                <h3 class="item-title">Бізнес-клас</h3>
               </div>
               <ul class="included-list">
                 <li class="included-item">
@@ -824,6 +846,18 @@
                     Груповий зворотній-зв'язок у тг-каналі
                   </p>
                 </li>
+                <li class="included-item">
+                  <img
+                    width="20"
+                    height="20"
+                    class="included-checkmark"
+                    src="./src/img/tariffs/included-checkmark-pink.svg"
+                    alt="checkmark"
+                  />
+                  <p class="included-text pink">
+                    Демонстрація трьох найактуальніших укладок
+                  </p>
+                </li>
               </ul>
               <span class="entries-time">Доступ - 4 місяці</span>
               <div class="price-container">
@@ -831,7 +865,7 @@
                 <p class="price"><span>9960 грн</span> 2490 грн</p>
               </div>
               <button class="buy-btn" data-modal-open="modal2">
-                хочу Бізнес клас
+                хочу Бізнес-клас
               </button>
               <span class="places-left">Залишилось 20 місць</span>
             </li>
@@ -862,6 +896,18 @@
                   />
                   <p class="included-text pink">
                     Доступ до усіх бонусних уроків
+                  </p>
+                </li>
+                <li class="included-item">
+                  <img
+                    width="20"
+                    height="20"
+                    class="included-checkmark"
+                    src="./src/img/tariffs/included-checkmark-pink.svg"
+                    alt="checkmark"
+                  />
+                  <p class="included-text pink">
+                    Демонстрація трьох найактуальніших укладок
                   </p>
                 </li>
                 <li class="included-item">
@@ -910,6 +956,7 @@
                     Особистий чат з Іриною Мелешко у форматі питання-відповідь
                   </p>
                 </li>
+
                 <li class="included-item">
                   <img
                     width="20"
@@ -921,14 +968,12 @@
                   <p class="included-text pink">1 zoom-зустріч</p>
                 </li>
               </ul>
-              <span class="entries-time">Доступ - 6 місяці</span>
+              <span class="entries-time">Доступ - 6 місяців</span>
               <div class="price-container">
                 <div class="line-throught"></div>
                 <p class="price"><span>18760 грн</span> 4960 грн</p>
               </div>
-              <button class="buy-btn" data-modal-open="modal3">
-                хочу Бізнес клас
-              </button>
+              <button class="buy-btn" data-modal-open="modal3">хочу VIP</button>
               <span class="places-left">Залишилось 5 місць</span>
             </li>
           </ul>
@@ -1142,7 +1187,7 @@
               <li class="questions-item">
                 <div class="questions-title-container">
                   <p class="questions-item-title">
-                    Чи підійде мені курс якщо я перукар у декреті, давно не
+                    Чи підійде мені курс, якщо я перукар у декреті, давно не
                     оновлювала вміння?
                   </p>
                   <div class="questions-item-svg"></div>
@@ -1203,7 +1248,7 @@
                   <div class="questions-wrapper">
                     <p class="questions-answer">
                       Звісно курс створено без використання незрозумілих
-                      термінів усе просто доступно без води
+                      термінів усе просто, доступно, без води
                     </p>
                   </div>
                 </div>

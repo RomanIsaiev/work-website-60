@@ -43,8 +43,14 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .hero {
-    background-image: url(../img/hero/mobile-background-2x.jpg);
+    background-image: url(../img/hero/mobile-background-3x.jpg);
   }
+}
+
+.course-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .course-category {
@@ -267,6 +273,18 @@
   text-transform: uppercase;
 
   margin-bottom: 20px;
+}
+
+.text-sale {
+  color: #fff;
+  text-align: center;
+  font-family: 'Futura PT';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 20px */
+  letter-spacing: -0.6px;
+  text-transform: uppercase;
 }
 
 .bonus-list {
@@ -1343,7 +1361,7 @@
 .footer {
   background: #101010;
 
-  padding-bottom: 80px;
+  padding-bottom: 120px;
 }
 
 .footer-deals::after {

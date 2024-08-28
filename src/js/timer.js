@@ -3,7 +3,6 @@ function getTimeRemaining(endtime) {
   var seconds = Math.floor((t / 1000) % 60);
   var minutes = Math.floor((t / 1000 / 60) % 60);
   var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
-  const days = Math.floor(t / (1000 * 60 * 60 * 24));
   return {
     total: t,
     hours: hours,
